@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: 'Nunito Sans', sans-serif; /* Updated font choice */
+    margin: 0;
+    padding: 0;
+    color: #333; 
+}
+
+html  {
+    scroll-behavior: smooth;
+}
+
+/* Material UI Inspired Styling */
+.hero, .signup {
+    text-align: center; 
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+iframe {
+    width: 80%; 
+    height: 400px;
+    border: 1px solid #ddd;
+}
+
+.btn {
+    background-color: #fdd239;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-2 {
+    background-color: black !important;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all .4s ease;
+-webkit-transition: all .4s ease;
+}
+
+.btn-2:hover, .btn-2:active, .btn-2:focus{
+    background-color: #fdd239 !important;
+    color: black;
+}
+
+.code {
+    background-color: #424d72;
+    border-radius: 1rem;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left; 
+    padding: 2rem;
+    font-family: "Consolas", sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 0.5rem 0.5rem 5px #343947; 
+}
+
+.stack {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.demo {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.placeholder {
+    background-image: url('./public/demo-1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

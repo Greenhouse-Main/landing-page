@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloak - Hide in Plain Sight">
+  <title>Cloak - Hide in Plain Sight</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Consolas&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="h-screen w-full flex flex-col">
+    <header class="flex w-full">
+      <nav class="flex flex-row w-full justify-between mx-32 my-12">
+        <div class="flex flex-row gap-4 justify-center items-center">
+          <img src="public/logo.jpeg" alt="Cloak Logo" class="w-12 h-12 rounded-lg">
+          <div class="flex flex-col justify-center items-start">
+            <span class="text-xl font-bold ">Cloak</span>
+            <span class="flex text-sm">Hide in Plain Sight</span>
+          </div>
+        </div>
+        <div class="flex flex-row gap-8 items-center font-semibold">
+          <span>Home</span>
+          <a href="#features">Features</a>
+          <a href="#signup" class="btn">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="flex flex-row">
+      <div class="flex flex-col w-1/2 gap-8 ml-56 my-32 justify-center">
+        <span class="text-4xl font-semibold flex flex-col">
+          <span>
+            Hide your Website
+          </span>
+          <span>
+            In Plain Slight
+          </span>
+        </span>
+        <span class="text-xl flex flex-wrap max-w-[32rem]">Cloak provides a state-of-the-art rendering technique that
+          keeps your website safe from bots and scrapers</span>
+        <div class="flex flex-row">
+          <a class="btn-2" href="#signup">Request a Demo</a>
+        </div>
+      </div>
+      <div class="flex w-1/2 justify-center items-center object-fit">
+        <img src="public/hero.png" alt="Hero Image" class="max-w-[30rem]">
+      </div>
+    </section>
+  </div>
+
+
+
+  <section id="demo">
+    <div class="flex flex-col w-full h-screen bg-[#fdd239]">
+      <span class="flex flex-col gap-1 w-full mt-16 text-center">
+        <span class="text-3xl font-bold">We know actions are worth a thousand words.</span>
+        <span class="text-lg">So here's Cloak doing its magic 🎉</span>
+      </span>
+      <div class="w-full h-full justify-center items-center flex gap-24">
+        <div class="my-12 flex flex-col gap-4">
+          <div class="flex mx-8 code">
+            <p>1. &lt;<span class="text-[#fb5]">html</span>&gt; </p>
+            <p>2. &lt;<span class="text-[#fb5]">head</span>&gt;</p>
+            <p>3. &lt;<span class="text-[#fb5]">title</span>&gt;My Awesome Website&lt;/<span
+                class="text-[#fb5]">title</span>&gt;</p>
+            <p>4. &lt;/<span class="text-[#fb5]">head</span>&gt;</p>
+            <p>5. &lt;<span class="text-[#fb5]">body</span>&gt;</p>
+            <p>6. &lt;<span class="text-[#fb5]">cloak</span> <span class="text-[#7c9]">res=</span><span
+                class="text-[#b4f]">"clicker-frame"</span>/&gt;</p>
+            <p>7. &lt;/<span class="text-[#fb5]">body</span>&gt;</p>
+            <p>8. &lt;/<span class="text-[#fb5]">html</span>&gt;</p>
+          </div>
+          <span class="font-semibold text-center">Is all the information on the following website</span>
+        </div>
+        <div class="flex w-1/2 h-[27rem] rounded-2xl bg-white p-4 mb-8 stack">
+          <iframe src="https://cloak-click-tracker.netlify.app" class="w-full h-full rounded-xl p-4"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="w-full flex h-screen flex-col content-between">
+      <div class="w-full pt-16 pl-24 flex flex-col gap-8 justify-start items-start">
+        <span class="text-3xl font-semibold text-center">Features</span>
+        <span class="text-lg flex flex-wrap max-w-[35rem]">Cloak offers a state-of-the-art website rendering technique
+          that is simple, intuitive, developer-friendly and packs the following features.</span>
+      </div>
+      <div class="flex flex-row gap-24 px-24 pt-16 w-full h-full justify-start items-start">
+        <div class="w-full h-full flex flex-col gap-2 justify-start items-center text-center">
+          <img src="public/bot-1.jpeg" alt="Feature 1" class="h-[15rem] rounded-xl border-black border-2">
+          <span class="text-xl font-bold mt-4">Bot Protection</span>
+          <span class="text-sm flex flex-wrap max-w-[15rem]">Offense is the best defense. Cloak ensures bots cannot
+            access your website
+          </span>
+        </div>
+        <div class="w-full h-full flex flex-col gap-2 justify-start items-center text-center">
+          <img src="public/scrape-2.jpeg" alt="Feature 2" class="h-[15rem] rounded-xl border-black border-2">
+          <span class="text-xl font-bold mt-4">Scrape Prevention</span>
+          <span class="text-sm flex flex-wrap max-w-[15rem]">Scripts can't take what they can't see. Cloak renders
+            websites uniquely. Leaving behind no interactive elements!</span>
+        </div>
+        <div class="w-full h-full flex flex-col gap-2 justify-start items-center text-center">
+          <img src="public/deploy-3.jpeg" alt="Feature 3" class="h-[15rem] rounded-xl border-black border-2">
+          <span class="text-xl font-bold mt-4">Easy Deployment</span>
+          <span class="text-sm flex flex-wrap max-w-[15rem]">Our special one-click toolkit can easily transform your
+            existing website into a cloak-powered bot slayer in a matter of seconds.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="w-full h-screen flex flex-col items-center">
+      <div class="flex w-full flex-col items-start pt-12 pl-32">
+        <span class="text-3xl font-semibold">
+          Request a Demo
+        </span>
+        <span>Provide some information so that we can get in touch with you</span>
+      </div>
+      <div class="mt-8 w-full flex justify-center items-center gap-32 px-16 ">
+        <div class="w-[30rem]">
+          <img src="public/demo-1.jpeg" alt="Demo Image" class="w-full h-full rounded-xl object-contain">
+        </div>
+        <div class="rounded-xl w-fit py-6 px-12 demo flex flex-col gap-4">
+          <span class="text-base font-bold">Cloak - Keep your website safe</span>
+          <form action="submit.php" method="post" class="flex flex-col w-full items-center gap-4 text-sm">
+            <div class="flex flex-row w-full gap-8">
+              <div class="flex flex-col w-1/2 gap-2 items-start">
+                <label for="fname" class="text-xs font-semibold ml-2">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your First Name"
+                  class="input border-2 rounded-lg pl-4 p-2">
+              </div>
+              <div class="flex flex-col w-1/2 gap-2 items-start">
+                <label for="lname" class="text-xs font-semibold ml-2">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your Last Name"
+                  class="input border-2 rounded-lg pl-4 p-2">
+              </div>
+            </div>
+            <div class="flex flex-row w-full gap-8">
+              <div class="flex flex-col w-1/2 gap-2 items-start">
+                <label for="email" class="text-xs font-semibold ml-2">Email</label>
+                <input type="email" name="email" id="email" class="input border-2 rounded-lg pl-4 p-2">
+              </div>
+              <div class="flex flex-col w-1/2 gap-2 items-start">
+                <label for="company" class="text-xs font-semibold ml-2">Company</label>
+                <input type="text" name="company" id="company" class="input border-2 rounded-lg pl-4 p-2">
+              </div>
+            </div>
+            <div class="flex w-full flex-col items-start gap-2">
+              <label for="phone" class="text-xs font-semibold ml-2">Phone</label>
+              <input type="tel" name="phone" id="phone" class="input border-2 rounded-lg pl-4 p-2 w-full">
+            </div>
+            <div class="flex w-full flex-col items-start gap-2">
+              <label for="message" class="text-xs font-semibold ml-2">Message</label>
+              <textarea name="message" id="message" class="input border-2 rounded-lg pl-4 p-2 w-full"></textarea>
+            </div>
+            <button type="submit" class="btn-2 mt-2">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="w-full h-32 flex flex-col items-center justify-center bg-[#fdd239]">
+      <span class="text-sm font-bold">© 2024 Cloak. All rights reserved</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
